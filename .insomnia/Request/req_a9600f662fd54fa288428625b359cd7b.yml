@@ -1,0 +1,26 @@
+_id: req_a9600f662fd54fa288428625b359cd7b
+type: Request
+parentId: wrk_6c8fb79219f34d3a8dc2d19dae7547c1
+modified: 1669618872872
+created: 1669558824267
+url: "{{ _.servidor }}/v1/viagens"
+name: Buscar todas as viagens
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_d17c07ba98fb4bf1a1f8938463546127
+    name: Authorization
+    value: "{% response 'body', 'req_e381b43507b2426f834c4ca98cd37525',
+      'b64::JC5kYXRhLnRva2Vu::46b', 'never', 60 %}"
+    description: ""
+authentication: {}
+metaSortKey: -1669558824267
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

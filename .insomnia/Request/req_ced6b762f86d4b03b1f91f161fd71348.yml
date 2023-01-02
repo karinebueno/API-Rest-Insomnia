@@ -1,0 +1,31 @@
+_id: req_ced6b762f86d4b03b1f91f161fd71348
+type: Request
+parentId: wrk_6c8fb79219f34d3a8dc2d19dae7547c1
+modified: 1669798402877
+created: 1669790391846
+url: http://165.227.93.41/cgitar/usuarios
+name: Criar novo usuário
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "usuarioNomeCompleto": "Karine Bueno da Silveira",
+      "usuarioEmail": "karinebueno@geb.inatel.br",
+      "usuarioSenha": "654321",
+      "usuarioTelefone": "15227467047"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1669790391847
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

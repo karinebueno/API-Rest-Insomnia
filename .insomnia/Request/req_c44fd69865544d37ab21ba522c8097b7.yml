@@ -1,0 +1,27 @@
+_id: req_c44fd69865544d37ab21ba522c8097b7
+type: Request
+parentId: wrk_6c8fb79219f34d3a8dc2d19dae7547c1
+modified: 1669798130076
+created: 1669792280764
+url: http://165.227.93.41/cgitar/perguntas
+name: Pergunta
+description: ""
+method: GET
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: token
+    value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiI4MjgiLCJ1c3Vhcmlvbm9tZSI6IkthcmluZSBCdWVubyBkYSBTaWx2ZWlyYSIsInVzdWFyaW9lbWFpbCI6ImthcmluZWJ1ZW5vQGdlYi5pbmF0ZWwuYnIiLCJ1c3VhcmlvdGVsZWZvbmUiOiIxNTIyNzQ2NzA0NyJ9.smwvnH9O-X9dwAW6XB1hRq3fqzoKqPiMxjCLQOqm-ok
+authentication: {}
+metaSortKey: -1669792280764
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

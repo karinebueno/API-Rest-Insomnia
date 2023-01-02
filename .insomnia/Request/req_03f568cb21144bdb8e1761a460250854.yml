@@ -1,0 +1,29 @@
+_id: req_03f568cb21144bdb8e1761a460250854
+type: Request
+parentId: wrk_6c8fb79219f34d3a8dc2d19dae7547c1
+modified: 1669798128375
+created: 1669792093513
+url: http://165.227.93.41/cgitar/autenticacao
+name: Autenticação
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "usuarioEmail": "karinebueno@geb.inatel.br",
+      "usuarioSenha": "654321"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1669792093513
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

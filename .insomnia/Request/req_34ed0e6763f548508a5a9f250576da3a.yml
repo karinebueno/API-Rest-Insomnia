@@ -1,0 +1,35 @@
+_id: req_34ed0e6763f548508a5a9f250576da3a
+type: Request
+parentId: fld_364671d27d6644f6ae9fa565448f7c51
+modified: 1669725959801
+created: 1669721055692
+url: http://localhost:8080/__admin/mappings/new
+name: Criar Mock
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"request": {
+    		"url": "/tempo-api/temperatura?regiao=Centro-Oeste",
+    		"method": "GET"
+    	},
+    	"response": {
+    		"status": 200,
+    		"body": "{\"data\":{\"temperatura\":25.00, \"regiao\":\"Centro-Oeste\"} }"
+    	}
+    }'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1669721055692
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

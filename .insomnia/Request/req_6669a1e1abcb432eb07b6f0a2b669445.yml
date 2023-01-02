@@ -1,0 +1,25 @@
+_id: req_6669a1e1abcb432eb07b6f0a2b669445
+type: Request
+parentId: wrk_6c8fb79219f34d3a8dc2d19dae7547c1
+modified: 1669798299063
+created: 1669794486816
+url: http://165.227.93.41/cgitar/respostas
+name: Visualizar resposta
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: token
+    value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c3VhcmlvaWQiOiI4MjgiLCJ1c3Vhcmlvbm9tZSI6IkthcmluZSBCdWVubyBkYSBTaWx2ZWlyYSIsInVzdWFyaW9lbWFpbCI6ImthcmluZWJ1ZW5vQGdlYi5pbmF0ZWwuYnIiLCJ1c3VhcmlvdGVsZWZvbmUiOiIxNTIyNzQ2NzA0NyJ9.smwvnH9O-X9dwAW6XB1hRq3fqzoKqPiMxjCLQOqm-ok
+authentication: {}
+metaSortKey: -1669794486816
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

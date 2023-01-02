@@ -1,0 +1,35 @@
+_id: req_a1edd8666275485cb18b310aeefd9e9b
+type: Request
+parentId: fld_364671d27d6644f6ae9fa565448f7c51
+modified: 1669790657285
+created: 1669725984862
+url: http://localhost:8080/__admin/mappings/new
+name: Criar Mock 2
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"request": {
+    		"url": "/tempo-api/temperatura?regiao=Sudeste",
+    		"method": "GET"
+    	},
+    	"response": {
+    		"status": 200,
+    		"body": "{\"data\":{\"temperatura\":18.00, \"regiao\":\"Sudeste\"} }"
+    	}
+    }'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1669639939979.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

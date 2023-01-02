@@ -1,0 +1,35 @@
+_id: req_1566b32c8157420c97ea8b761ec3ecad
+type: Request
+parentId: wrk_6c8fb79219f34d3a8dc2d19dae7547c1
+modified: 1669792554030
+created: 1669559839163
+url: "{{ _.servidor }}/v1/viagens"
+name: Cadastrar viagem
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "acompanhante": "Roberto",
+      "dataPartida": "2023-01-03",
+      "dataRetorno": "2023-02-03",
+      "localDeDestino": "Santa Rita do Sapucai",
+      "regiao": "Sudeste"
+    }
+parameters: []
+headers:
+  - name: Authorization
+    value: "{% response 'body', 'req_eb7bfe231b9c4f2f840344d8d374fc4d',
+      'b64::JC5kYXRhLnRva2Vu::46b', 'never', 60 %}"
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1669558261919.8125
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
