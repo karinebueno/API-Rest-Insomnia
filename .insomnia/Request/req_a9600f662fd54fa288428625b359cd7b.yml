@@ -1,7 +1,7 @@
 _id: req_a9600f662fd54fa288428625b359cd7b
 type: Request
 parentId: wrk_6c8fb79219f34d3a8dc2d19dae7547c1
-modified: 1669618872872
+modified: 1672674452539
 created: 1669558824267
 url: "{{ _.servidor }}/v1/viagens"
 name: Buscar todas as viagens
@@ -12,8 +12,7 @@ parameters: []
 headers:
   - id: pair_d17c07ba98fb4bf1a1f8938463546127
     name: Authorization
-    value: "{% response 'body', 'req_e381b43507b2426f834c4ca98cd37525',
-      'b64::JC5kYXRhLnRva2Vu::46b', 'never', 60 %}"
+    value: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c3VhcmlvQGVtYWlsLmNvbSIsInJvbGUiOiJST0xFX1VTVUFSSU8iLCJjcmVhdGVkIjoxNjY5NTU4Njc3MzcwLCJleHAiOjE2Njk2NTg2NzZ9.qjJ2Ds8CwwV8JjL1sh5gk9CF3Qg88-qjhQFXVs73fODtHHSckcj_OdV8hBzc867ljW4U7p6RCzZNU7453Jgrag
     description: ""
 authentication: {}
 metaSortKey: -1669558824267
