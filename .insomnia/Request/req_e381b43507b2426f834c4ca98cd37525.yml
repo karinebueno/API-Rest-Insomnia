@@ -1,7 +1,7 @@
 _id: req_e381b43507b2426f834c4ca98cd37525
 type: Request
 parentId: wrk_6c8fb79219f34d3a8dc2d19dae7547c1
-modified: 1669792552045
+modified: 1672674302964
 created: 1669558224430
 url: "{{ _.servidor }}/v1/auth"
 name: Capturar o token do usuario
