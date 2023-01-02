@@ -1,7 +1,7 @@
 _id: req_eb7bfe231b9c4f2f840344d8d374fc4d
 type: Request
 parentId: wrk_6c8fb79219f34d3a8dc2d19dae7547c1
-modified: 1669792547155
+modified: 1672674014744
 created: 1669560073314
 url: "{{ _.servidor }}/v1/auth"
 name: Capturar o token do administrador
