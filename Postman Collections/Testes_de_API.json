@@ -1,0 +1,439 @@
+{
+	"info": {
+		"_postman_id": "56ecb9fd-69f3-41da-a77f-aa8d176d2563",
+		"name": "PetStore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4a217851-aef3-4526-b74b-080477f0814a",
+								"exec": [
+									"pm.test(\"Status code is 200\", function(){\r",
+									"    const responseJson = pm.response.json();\r",
+									"    console.log(responseJson);\r",
+									"    pm.response.to.have.status(200);\r",
+									"    pm.expect(responseJson).to.have.property('type');\r",
+									"    pm.response.to.have.header(\"Content-Type\", 'application/json');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "1b2085c9-f5c9-4bd6-a601-7c96b5d3ddc2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url_environment}}/user/login?username=karinebueno&password=abc123",
+							"host": [
+								"{{base_url_environment}}"
+							],
+							"path": [
+								"user",
+								"login"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "karinebueno"
+								},
+								{
+									"key": "password",
+									"value": "abc123"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e768879e-d1e1-4392-a50f-e1a4b0e77477",
+								"exec": [
+									"var req = JSON.parse(request.data)\r",
+									"console.log(req.username)\r",
+									"pm.collectionVariables.set(\"username\", req.username);\r",
+									"\r",
+									"\r",
+									"console.log(pm.globals.get(\"base_url_global\"));\r",
+									"console.log(pm.collectionVariables.get(\"base_url_collections\"));\r",
+									"\r",
+									"pm.globals.set(\"base_url_global\",\"test2\");\r",
+									"console.log(pm.globals.get(\"base_url_global\"));\r",
+									"\r",
+									"pm.test(\"Status code is 200\", function(){\r",
+									"    pm.response.to.have.status(200);\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"    pm.response.to.have.property(\"code\",200).to.be.a('number');\r",
+									"    pm.expect(pm.response).to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type is present\" , function (){\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "40e56d8d-68b3-4311-820a-fe76727e5393",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 2,\r\n  \"username\": \"karinebueno\",\r\n  \"firstName\": \"Karine\",\r\n  \"lastName\": \"Bueno\",\r\n  \"email\": \"karinebueno@gmail.com\",\r\n  \"password\": \"abc123\",\r\n  \"phone\": \"000111777\",\r\n  \"userStatus\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url_environment}}/user"
+					},
+					"response": [
+						{
+							"id": "13a13a5b-8c7c-47cd-a513-13484768a135",
+							"name": "Create user",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 2,\r\n  \"username\": \"karinebueno\",\r\n  \"firstName\": \"Karine\",\r\n  \"lastName\": \"Bueno\",\r\n  \"email\": \"karinebueno@gmail.com\",\r\n  \"password\": \"abc123\",\r\n  \"phone\": \"000111777\",\r\n  \"userStatus\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{base_url_environment}}/user"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 02 Jan 2023 13:44:33 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, DELETE, PUT"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Content-Type, api_key, Authorization"
+								},
+								{
+									"key": "Server",
+									"value": "Jetty(9.2.9.v20150224)"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"code\": 200,\n    \"type\": \"unknown\",\n    \"message\": \"2\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get user by username",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7c1152fb-e75c-465f-b00c-3afbb093b60d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    const responseJson = pm.response.json();\r",
+									"    console.log(responseJson)\r",
+									"    console.log(pm.response)\r",
+									"    pm.expect(pm.response).to.have.status(200)\r",
+									"    pm.expect(responseJson).to.have.property(\"phone\")\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "709b3076-8a0e-4b38-bae7-57c3a0440ac5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url_environment}}/user/karinebueno"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "92ea7f99-4a20-4bce-9f38-42c433fdefb9",
+								"exec": [
+									"pm.test(\"Status code name has string\", function () {\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Message return name of person deleted\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(pm.collectionVariables.get(\"username\"));\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "85bb0c17-8fed-4742-8595-d131924b93ea",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{base_url_environment}}/user/karinebueno"
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "85756d55-cfc7-40b1-8fe2-171a1dffbd95"
+		},
+		{
+			"name": "Pet",
+			"item": [
+				{
+					"name": "Add Pet to the store",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "99b56c4e-ad5b-4e62-840c-27d25fcf50c9",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type is present\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Status code name has String\", function () {\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Body matches properties\", function () {\r",
+									"    pm.expect(pm.response.json()).to.have.property('id',2);\r",
+									"    pm.expect(pm.response.json()).to.have.property('name','Jackie');\r",
+									"});\r",
+									"\r",
+									"console.log();\r",
+									"pm.collectionVariables.set(\"id\", pm.response.json().id);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "e4f5911b-5eb7-4bcf-aab9-b1b1aa0b814c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 2,\r\n  \"category\": {\r\n    \"id\": 0,\r\n    \"name\": \"dog\"\r\n  },\r\n  \"name\": \"Jackie\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url_environment}}/pet"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Pet",
+					"_postman_id": "533f4548-0b9d-4b45-9ca4-880b05a30b15",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 2,\r\n  \"category\": {\r\n    \"id\": 0,\r\n    \"name\": \"Jackie\"\r\n  },\r\n  \"name\": \"Jackie\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url_environment}}/pet"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7c10e780-c8b6-442c-9b29-d6f9660737fc",
+								"exec": [
+									"pm.test(\"Message return id of pet deleted\", function () {\r",
+									"    pm.expect(responseJson).to.have.property(\"message\",2)\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"_postman_id": "3b7e9dae-f5b4-492b-9c6f-a3f9be0afc2f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url_environment}}/pet/2?api_key=special-key&petId=2",
+							"host": [
+								"{{base_url_environment}}"
+							],
+							"path": [
+								"pet",
+								"2"
+							],
+							"query": [
+								{
+									"key": "api_key",
+									"value": "special-key"
+								},
+								{
+									"key": "petId",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "69c8ce97-a009-4cff-b95a-f2688a8d2b00"
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": {
+			"value": "special-key",
+			"key": "api-key"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "607db9f6-0210-42f9-a827-6e81f8c9d097",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "f75a14d2-bfff-402c-bc11-d592237e3914",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "8c51627a-e0c9-407e-894d-f4e971c2e8a2",
+			"key": "base_url_collections",
+			"value": "https://petstore.swagger.io/v2",
+			"type": "string"
+		},
+		{
+			"id": "e9bf4a0a-8b0a-422b-b085-320b5498f681",
+			"key": "username",
+			"value": "karinebueno",
+			"type": "string"
+		},
+		{
+			"id": "e95e4de5-182b-4109-971e-c79a0847aa12",
+			"key": "id",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
