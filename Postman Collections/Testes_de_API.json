@@ -32,7 +32,7 @@
 							}
 						}
 					],
-					"_postman_id": "1b2085c9-f5c9-4bd6-a601-7c96b5d3ddc2",
+					"id": "1b2085c9-f5c9-4bd6-a601-7c96b5d3ddc2",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -96,7 +96,7 @@
 							}
 						}
 					],
-					"_postman_id": "40e56d8d-68b3-4311-820a-fe76727e5393",
+					"id": "40e56d8d-68b3-4311-820a-fe76727e5393",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -210,7 +210,7 @@
 							}
 						}
 					],
-					"_postman_id": "709b3076-8a0e-4b38-bae7-57c3a0440ac5",
+					"id": "709b3076-8a0e-4b38-bae7-57c3a0440ac5",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -246,7 +246,7 @@
 							}
 						}
 					],
-					"_postman_id": "85bb0c17-8fed-4742-8595-d131924b93ea",
+					"id": "85bb0c17-8fed-4742-8595-d131924b93ea",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -258,7 +258,7 @@
 					"response": []
 				}
 			],
-			"_postman_id": "85756d55-cfc7-40b1-8fe2-171a1dffbd95"
+			"id": "85756d55-cfc7-40b1-8fe2-171a1dffbd95"
 		},
 		{
 			"name": "Pet",
@@ -295,7 +295,7 @@
 							}
 						}
 					],
-					"_postman_id": "e4f5911b-5eb7-4bcf-aab9-b1b1aa0b814c",
+					"id": "e4f5911b-5eb7-4bcf-aab9-b1b1aa0b814c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -317,7 +317,7 @@
 				},
 				{
 					"name": "Update Pet",
-					"_postman_id": "533f4548-0b9d-4b45-9ca4-880b05a30b15",
+					"id": "533f4548-0b9d-4b45-9ca4-880b05a30b15",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -353,7 +353,7 @@
 							}
 						}
 					],
-					"_postman_id": "3b7e9dae-f5b4-492b-9c6f-a3f9be0afc2f",
+					"id": "3b7e9dae-f5b4-492b-9c6f-a3f9be0afc2f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -384,7 +384,19 @@
 					"response": []
 				}
 			],
-			"_postman_id": "69c8ce97-a009-4cff-b95a-f2688a8d2b00"
+			"id": "69c8ce97-a009-4cff-b95a-f2688a8d2b00"
+		},
+		{
+			"name": "New Request",
+			"id": "9c726bf0-68eb-410f-a70c-0db49c6dc99f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"auth": {
@@ -418,22 +430,20 @@
 	],
 	"variable": [
 		{
-			"id": "8c51627a-e0c9-407e-894d-f4e971c2e8a2",
+			"id": "5e1c3d08-7821-4796-894a-46ed85c6e189",
 			"key": "base_url_collections",
 			"value": "https://petstore.swagger.io/v2",
 			"type": "string"
 		},
 		{
-			"id": "e9bf4a0a-8b0a-422b-b085-320b5498f681",
+			"id": "c626c8ed-5145-4ae5-bd4a-370b143d6a74",
 			"key": "username",
-			"value": "karinebueno",
-			"type": "string"
+			"value": "karinebueno"
 		},
 		{
-			"id": "e95e4de5-182b-4109-971e-c79a0847aa12",
+			"id": "88269490-da99-4106-9c93-5d3d39bc08de",
 			"key": "id",
-			"value": "",
-			"type": "string"
+			"value": ""
 		}
 	]
 }
