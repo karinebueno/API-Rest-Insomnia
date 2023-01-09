@@ -385,18 +385,6 @@
 				}
 			],
 			"id": "69c8ce97-a009-4cff-b95a-f2688a8d2b00"
-		},
-		{
-			"name": "New Request",
-			"id": "9c726bf0-68eb-410f-a70c-0db49c6dc99f",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
 		}
 	],
 	"auth": {
@@ -430,18 +418,18 @@
 	],
 	"variable": [
 		{
-			"id": "5e1c3d08-7821-4796-894a-46ed85c6e189",
+			"id": "54877f23-cf48-4ba6-b66d-8343392d6390",
 			"key": "base_url_collections",
 			"value": "https://petstore.swagger.io/v2",
 			"type": "string"
 		},
 		{
-			"id": "c626c8ed-5145-4ae5-bd4a-370b143d6a74",
+			"id": "438095ef-4597-46e1-b361-6b368b9c3e8e",
 			"key": "username",
 			"value": "karinebueno"
 		},
 		{
-			"id": "88269490-da99-4106-9c93-5d3d39bc08de",
+			"id": "eb710862-72d6-4412-a6ba-976f7502b858",
 			"key": "id",
 			"value": ""
 		}
